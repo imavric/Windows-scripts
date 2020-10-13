@@ -21,7 +21,6 @@ if %errorlevel%==0 (
         echo     Right-click and select ^'Run as Administrator^' and try again.
         echo     Press any key to exit...
         pause > NUL
-
         exit
 )
 
