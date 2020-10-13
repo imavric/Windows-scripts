@@ -1,3 +1,8 @@
+::
+:: Batchfor clearing printer queue. 
+:: ver. 1
+::
+
 echo off
 
 echo.
@@ -9,14 +14,18 @@ if %errorlevel%==0 (
         echo Privilegije OK. Nastavljam... (Elevation found! Proceeding...)
 ) else (
         echo  :: Niste pokrenuli skript kao Administrator. (You are NOT running as Administrator)
-        echo.
         echo     Desni klik na ikonu pa odaberite ^'Run as Administrator^'. (Right-click and select ^'Run as Administrator^' and try again.)
         echo     Pritisnite bilo koje dugme za kraj... (Press any key to exit...)
+        echo.
+        echo  :: You are NOT running as Administrator.
+        echo     Right-click and select ^'Run as Administrator^' and try again.
+        echo     Press any key to exit...
         pause > NUL
+
         exit
 )
 
-rem Clear print queue
+:: Clear print queue
 echo. 
 echo Početak čišćenja. (Clearing print queue.)
 echo.
