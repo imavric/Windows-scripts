@@ -1,6 +1,5 @@
 ::
-:: Batchfor clearing printer queue. 
-:: ver. 1
+:: Clear printer queue.
 ::
 
 echo off
