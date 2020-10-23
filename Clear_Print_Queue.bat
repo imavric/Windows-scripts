@@ -2,7 +2,7 @@
 :: Clear printer queue.
 ::
 
-echo off
+@echo off
 
 echo.
 echo  :: Provera Administratorskih privilegija... (Checking For Administrator Elevation...)
